@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-stone-100 dark:bg-stone-900">
+    <header class="bg-white fixed w-full z-30 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div>
+                    <a hreh="#" class="text-3xl font-bold text-red-600">EventX</a>
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="hover:text-red-600"> About</a>
+                    <a href="#speakers" class="hover:text-red-600"> Speakers</a>
+                    <a href="#schedule" class="hover:text-red-600"> Schedule</a>
+                    <a href="#register" class="bg-orange-500 text-white rounded-lg px-3 py-2"> Register</a>
+
+                </nav>
+
+                <!--mobile hamburger-->
+                <button id="menu-btn" class="md:hidden flex items-center text-gray-700 hover:text-indigo-600 focus:outline-none" aria-label="Toggle menu">
+                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <line x1="3" y1="6"  x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+        <section class="bg-gradient-to-r from-red-700 via-orange-600 to-yellow-500 text-white pt-32 pb-24">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h1 class="text-4xl font-extrabold mb-6 ">Ignite Your Creativity at Inspire 2025</h1>
+                <p class="text-lg sm:text-xl mb-8">Join visionaries and innovators for a two-day celebratiojn of ideas, tech, and art.</p>
+                <a href="#register" class="px-8 py-3 text-lg font-semibold bg-white text-red-500 rounded-full shadow-lg"> Reserve your seat</a>
+
+            </div>
+        </section>
+        <section class=" pt-21 pb-21 text-white max-w-4xl mx-auto text-center px-4">
+            <h1 class="text-4xl font-extrabold mb-6 ">About the Event</h1>
+            <p class="text-lg sm:text-xl mb-8">Inspire 2025 is a premier conference bringing together creators, developers and entrepeneuers to explore cutting-edge ideas and transformative technologies.</p>
+            </section>
+        <section>
+        <div class="flex mx-20 my-20 items-center gap-6 bg-stone-800 p-2 rounded-lg">
+            <div class="w-1/3 flex-1 bg-stone-500 p-3 rounded-lg text-white text-font-medium">
+                <p class="text-3xl">Keynote talks</p>
+                <p>Hear from Industry leaders shaping tomorrows world.</p>
+            </div>
+            <div class="w-1/3 flex-1 bg-stone-500 p-3 rounded-lg text-white text-font-medium">
+                <p class="text-3xl">Hands-on-workshop</p>
+                <p>Gain practical skills with expert-led sessions.</p>
+            </div>
+            <div class="w-1/3 flex-1 bg-stone-500 p-3 rounded-lg text-white text-font-medium">
+                <p class="text-3xl">Networking</p>
+                <p>Connect with peers and potential collaborators.</p>
+            </div>
+        <div>
+        </section>
+    </body>
+</html>
