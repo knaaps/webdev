@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventX</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </head>
+  <body class="bg-stone-100 dark:bg-stone-900">
+    <!-- header -->
+    <header class="bg-white fixed w-full z-30 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <a href="#" class="text-3xl font-bold text-red-600">EventX</a>
+
+          <!-- navbar -->
+          <nav class="hidden md:flex space-x-8 items-center">
+            <a href="#about" class="hover:text-red-600">About</a>
+            <a href="#highlights" class="hover:text-red-600">Speakers</a>
+            <a href="#schedule" class="hover:text-red-600">Schedule</a>
+            <a href="#reserve" class="bg-orange-500 text-white rounded-lg px-3 py-2">
+              Register
+            </a>
+          </nav>
+
+          <!-- hamburger menu -->
+          <button
+            id="menu-btn"
+            class="md:hidden flex items-center text-gray-700 hover:text-red-600 focus:outline-none"
+            aria-label="Toggle menu"
+            onclick="toggleMenu()"
+          >
+            <svg
+              class="w-8 h-8"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-4 shadow-lg fixed top-16 left-0 right-0 z-20">
+        <ul class="flex flex-col gap-4 text-lg">
+          <li><a href="#about" class="hover:text-red-600" onclick="toggleMenu()">About</a></li>
+          <li><a href="#highlights" class="hover:text-red-600" onclick="toggleMenu()">Speakers</a></li>
+          <li><a href="#schedule" class="hover:text-red-600" onclick="toggleMenu()">Schedule</a></li>
+        </ul>
+        <a href="#reserve" class="block w-full mt-4 px-4 py-2 bg-orange-500 text-white rounded-lg text-center" onclick="toggleMenu()">
+          Register
+        </a>
+      </div>
+    </header>
+
+    <!-- body -->
+    <section class="bg-gradient-to-r from-red-700 via-orange-600 to-yellow-500 text-white pt-32 pb-24">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <h1 class="text-4xl font-extrabold mb-6">
+          Ignite Your Creativity at Inspire 2025
+        </h1>
+        <p class="text-lg sm:text-xl mb-8">
+          Join visionaries and innovators for a two-day celebration of ideas,
+          tech, and art.
+        </p>
+        <a href="#reserve" class="px-8 py-3 text-lg font-semibold bg-white text-red-500 rounded-full shadow-lg hover:bg-red-100">
+          Reserve your seat
+        </a>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="pt-20 pb-20 text-white max-w-4xl mx-auto text-center px-4">
+      <h2 class="text-4xl font-extrabold mb-6">About the Event</h2>
+      <p class="text-lg sm:text-xl mb-8">
+        Inspire 2025 is a premier conference bringing together creators,
+        developers and entrepreneurs to explore cutting-edge ideas and
+        transformative technologies.
+      </p>
+    </section>
+
+    <!-- highlights -->
+    <section id="highlights" class="bg-stone-800 pt-20 pb-20 px-4 text-center text-white">
+      <h2 class="text-3xl font-bold p-5">Event Highlights</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
+        <div class="bg-stone-500 rounded-lg shadow-lg p-6">
+          <h3 class="text-2xl font-bold mb-2">Keynote Talks</h3>
+          <p>Hear from industry leaders shaping tomorrow's world.</p>
+        </div>
+        <div class="bg-stone-500 rounded-lg shadow-lg p-6">
+          <h3 class="text-2xl font-bold mb-2">Hands-on Workshops</h3>
+          <p>Gain practical skills with expert-led sessions.</p>
+        </div>
+        <div class="bg-stone-500 rounded-lg shadow-lg p-6">
+          <h3 class="text-2xl font-bold mb-2">Networking</h3>
+          <p>Connect with peers and potential collaborators.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- schedules -->
+    <section id="schedule" class="bg-stone-900 pt-20 pb-20 px-4 text-white">
+      <h2 class="text-3xl font-bold text-center mb-8">Event Schedule</h2>
+      <div class="max-w-3xl mx-auto flex flex-col gap-8">
+        <div class="bg-stone-700 rounded-lg shadow-lg p-6">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-2xl font-bold">Day 1 - Vision & Innovation</h3>
+            <span class="text-orange-300 font-bold">10:00 AM - 5:00 PM</span>
+          </div>
+          <p class="mt-2">Keynotes and product showcases.</p>
+        </div>
+        <div class="bg-stone-700 rounded-lg shadow-lg p-6">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-2xl font-bold">Day 2 - Workshop & Networking</h3>
+            <span class="text-orange-300 font-bold">10:00 AM - 4:00 PM</span>
+          </div>
+          <p class="mt-2">Interactive sessions and meetups.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- registeration -->
+    <section id="reserve" class="bg-orange-700 pt-20 pb-20 px-4 text-center text-white">
+      <h2 class="text-3xl font-bold mb-6">Reserve Your Spot</h2>
+      <form class="max-w-md mx-auto mt-8 flex flex-col gap-4">
+        <input
+          type="text"
+          placeholder="Name"
+          class="bg-white text-gray-800 px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-red-600 w-full"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          class="bg-white text-gray-800 px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-red-600 w-full"
+        />
+        <button type="submit" class="px-4 py-2 bg-white text-red-600 rounded hover:bg-red-200 font-semibold w-full">
+          Register Now
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
