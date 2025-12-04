@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EventX</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById("mobile-menu");
-        menu.classList.toggle("hidden");
-      }
-    </script>
   </head>
   <body class="bg-stone-100 dark:bg-stone-900">
     <!-- header -->
@@ -30,12 +24,7 @@
           </nav>
 
           <!-- hamburger menu -->
-          <button
-            id="menu-btn"
-            class="md:hidden flex items-center text-gray-700 hover:text-red-600 focus:outline-none"
-            aria-label="Toggle menu"
-            onclick="toggleMenu()"
-          >
+          <button id="menu-btn" class="md:hidden flex items-center text-gray-700 hover:text-red-600 focus:outline-none" onclick="toggleMenu()">
             <svg
               class="w-8 h-8"
               viewBox="0 0 24 24"
@@ -53,7 +42,7 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-4 shadow-lg fixed top-16 left-0 right-0 z-20">
+      <div id="mobile_menu" class="hidden md:hidden bg-white px-4 py-4 shadow-lg fixed top-16 left-0 right-0 z-20">
         <ul class="flex flex-col gap-4 text-lg">
           <li><a href="#about" class="hover:text-red-600" onclick="toggleMenu()">About</a></li>
           <li><a href="#highlights" class="hover:text-red-600" onclick="toggleMenu()">Speakers</a></li>
@@ -151,4 +140,10 @@
       </form>
     </section>
   </body>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile_menu");
+        menu.classList.toggle("hidden");
+      }
+  </script> 
 </html>
