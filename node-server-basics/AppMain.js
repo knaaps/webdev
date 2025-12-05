@@ -1,4 +1,3 @@
-//mongodb+srv://vinayak4x_db_user:LXciYtuMZysc2KR9@cluster0.ybovswg.mongodb.net/
 const express = require('express')
 const app = express()
 const port = 3000
